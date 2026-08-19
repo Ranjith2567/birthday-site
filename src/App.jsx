@@ -25,11 +25,11 @@ export default function App() {
       <audio ref={audioRef} src="/birthday.mp3" loop />
 
       {/* Global Floating Music Toggle Button */}
-      {currentPage !== 'gift' && (
-        <button className="music-toggle-btn" onClick={toggleMusic}>
-          {isPlaying ? '🎵 Music: ON' : '🔇 Play Music'}
-        </button>
-      )}
+    {currentPage !== 'gift' && (
+  <button className="music-toggle-btn" onClick={toggleMusic}>
+    {isPlaying ? '🎵 Music: ON' : '🔇 Play Music'}
+  </button>
+)}
 
       {/* PAGE 1: GIFT BOX UNBOXING */}
       {currentPage === 'gift' && (
@@ -113,7 +113,7 @@ function AkkaAwardIntro({ onNext }) {
         <div className="award-badge">🏆 OFFICIAL CERTIFICATE 🏆</div>
         <h1 className="award-title">World's Best Award</h1>
         <p className="award-subtitle">This prestigious award is proudly presented to</p>
-        <h2 className="recipient-name">Priya💖</h2>
+        <h2 className="recipient-name">Keerthana 💖✨</h2>
         <p className="award-desc">
           For being an incredible backbone, an unmatched secret-keeper, 
           and the absolute best sister in the entire universe! 
@@ -198,18 +198,18 @@ function PolaroidPhotoWall({ onNext }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const photos = [
-    { id: 1, src: "/images/photo1.jpg", caption: "Our endless silly fights! 🐱🐭", rot: "-3deg" },
-    { id: 2, src: "/images/photo2.jpg", caption: "Always my backbone! 💪❤️", rot: "4deg" },
-    { id: 3, src: "/images/photo3.jpg", caption: "Partners in crime forever 🤫", rot: "-2deg" },
-    { id: 4, src: "/images/photo4.jpg", caption: "That random trip/outing! 🌍", rot: "5deg" },
-    { id: 5, src: "/images/photo5.jpg", caption: "Pure smiles & happiness 😊", rot: "-4deg" },
-    { id: 6, src: "/images/photo6.jpg", caption: "Trouble-maker at home! 😂", rot: "3deg" },
-    { id: 7, src: "/images/photo7.jpg", caption: "My favourite person 🫶", rot: "-5deg" },
-    { id: 8, src: "/images/photo8.jpg", caption: "Unconditional love always 💖", rot: "2deg" },
-    { id: 9, src: "/images/photo9.jpg", caption: "Crazy memories together ✨", rot: "-3deg" },
-    { id: 10, src: "/images/photo10.jpg", caption: "Best Akka in the world! 👑💖", rot: "4deg" },
-    { id: 11, src: "/images/photo11.jpg", caption: "Thank you for everything! 🫂✨", rot: "-2deg" },
-    { id: 12, src: "/images/photo12.jpg", caption: "Happy Birthday Akka! 🎉🎂", rot: "0deg" }
+    { id: 1, src: "/images/photo1.jpg", caption: "Pongal vibes & traditional smile! 🌾✨", rot: "-3deg" },
+    { id: 2, src: "/images/photo2.jpg", caption: "Making the birthday special with the prettiest smile! 💖🎉", rot: "4deg" },
+    { id: 3, src: "/images/photo3.jpg", caption: "Onam vibes & a beautiful traditional smile! 🌸🌾", rot: "-2deg" },
+    { id: 4, src: "/images/photo4.jpg", caption: "Nature, peace, and Goa vibes! 🌊✨", rot: "5deg" },
+    { id: 5, src: "/images/photo5.jpg", caption: "Traditional elegance on Pongal day! 🪔❤️", rot: "-4deg" },
+    { id: 6, src: "/images/photo6.jpg", caption: "Heartfelt moments & a sweet smile! 💖🖤", rot: "3deg" },
+    { id: 7, src: "/images/photo7.jpg", caption: "Simple, elegant, and smiling away! 🥰✨", rot: "-5deg" },
+    { id: 8, src: "/images/photo8.jpg", caption: "Simple, cute, and smiling through the day! 🥰🌸", rot: "2deg" },
+    { id: 9, src: "/images/photo9.jpg", caption: "A beautiful day, a historic place, and happy vibes! 📸💙", rot: "-3deg" },
+    { id: 10, src: "/images/photo10.jpg", caption: "Pongal 2025 memories & a golden smile! 🌾✨", rot: "4deg" },
+    { id: 11, src: "/images/photo11.jpg", caption: "High hills, cool style, and happy moments! 🌿✨", rot: "-2deg" },
+    { id: 12, src: "/images/photo12.jpg", caption: "Making every moment colorful and bright! 🤍💖", rot: "0deg" }
   ];
 
   const handleNextPhoto = () => {
@@ -401,7 +401,7 @@ function CakeCuttingScreen({ onRestart }) {
         
         {/* Title drops in last, exactly above the cake! */}
         <h2 className="cake-title-dynamic">
-          {step === 'lit' && "Happy Birthday 💖🎂"}
+          {step === 'lit' && "Happy Birthday Keerthana 💖🎂"}
           {step === 'blown' && "Yay! Now let's cut the cake! 🎉"}
           {step === 'cut' && "Time to Celebrate! ✨"}
         </h2>
@@ -451,7 +451,7 @@ function CakeCuttingScreen({ onRestart }) {
 
           {step === 'cut' && (
             <div className="final-message">
-              <p className="sweet-note">Wishing you the most magical and happiest year ahead! Evlo periya aala aanalum, you're always my favourite person.🫂💖</p>
+              <p className="sweet-note">Wishing you the happiest and most magical year yet! You are not just my sister, but my favourite person in the entire universe. Enjoy your life, stay blessed, and remember — I'm always here for you! 🫂💖</p>
               <button className="cake-btn restart-btn" onClick={onRestart}>
                 🔄 Replay Memories
               </button>
@@ -513,10 +513,10 @@ function WheelOfCoupons({ onNext }) {
   const [result, setResult] = useState(null);
 
   const segments = [
-    "Chocolate 🍫",
-    "Surprise Gift 🎁",
+    "Waffle & Brownie Treat 🧇",
+    "Shawarma Treat 🌯",
     "Ice Cream Treat 🍦",
-    "Pani Puri Date 😋",
+    "KFC Treat 🍔",
     "Biriyani Treat 🍗",
     "Cafe Treat ☕"
   ];
